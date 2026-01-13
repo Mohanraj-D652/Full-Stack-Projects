@@ -1,0 +1,142 @@
+/* ===== Page Background ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #f4f7fc, #edf3fb);
+    min-height: 100vh;
+}
+
+/* ===== Top Navigation Wrapper ===== */
+.top-nav {
+    position: fixed;
+    top: 18px;
+    right: 30px;
+    display: flex;
+    gap: 12px;
+    z-index: 1000;
+}
+
+/* ===== Nav Buttons ===== */
+.top-nav a {
+    text-decoration: none;
+    background: #3f72af;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.top-nav a:hover {
+    background: #365f95;
+}
+
+.nav-add-transaction {
+    background: #4b89dc;
+}
+
+.nav-add-transaction:hover {
+    background: #3c78c4;
+}
+
+/* ===== Page Heading ===== */
+h2 {
+    text-align: center;
+    margin-top: 90px;
+    color: #24536b;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* ===== Table Wrapper ===== */
+.table-container {
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #e6f1f7;
+}
+
+th, td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+th {
+    color: #24536b;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background: #f9fbff;
+}
+
+/* ===== Column Alignments ===== */
+.amount-col {
+    text-align: right;
+    font-weight: 600;
+    color: #3f72af;
+}
+
+.id-col {
+    text-align: center;
+    width: 70px;
+}
+
+.date-col {
+    width: 120px;
+}
+
+.category-col {
+    width: 160px;
+}
+
+.merchant-col {
+    width: 220px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+
+    .top-nav {
+        position: static;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px auto 10px;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    .table-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    th, td {
+        font-size: 13px;
+        padding: 10px;
+    }
+}

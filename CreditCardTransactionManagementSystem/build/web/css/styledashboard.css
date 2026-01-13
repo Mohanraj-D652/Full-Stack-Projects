@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #f2f6ff, #e8f0ff);
+}
+.dashboard-header {
+    width: 100%;
+    background: #ffffff;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.dashboard-header h1 {
+    font-size: 20px;
+    color: #24536b;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    background: #3f72af;
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    background: #2d5d94;
+}
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Dashboard Header ===== */
+.dashboard-header {
+    width: 100%;
+    padding: 14px 24px;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Left Title */
+.dashboard-header h1 {
+    font-size: 22px;
+    color: #24536b;
+    white-space: nowrap;
+}
+
+/* Navigation Buttons */
+.nav-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-actions a {
+    padding: 7px 16px;
+    background: #3f72af;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.nav-actions a:hover {
+    background: #2d5f9c;
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 1024px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-actions {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard-header {
+        padding: 12px 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 18px;
+    }
+
+    .nav-actions a {
+        flex: 1 1 45%;
+        text-align: center;
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+
+
+
+/* ===== Dashboard Header ===== */
+.dashboard-header {
+    width: 100%;
+    padding: 14px 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.dashboard-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #24536b;
+}
+
+/* ===== Right Side Buttons ===== */
+.dashboard-actions a {
+    margin-left: 12px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #3f72af;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.dashboard-actions a:hover {
+    background: #365f95;
+}
+/* ===== Dashboard Content ===== */
+.dashboard-container {
+    padding: 40px;
+}
+
+
+
+/* ===== DASHBOARD HEADER ===== */
+
+.header {
+    width: 100%;
+    padding: 14px 30px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+    font-size: 22px;
+    color: #24536b;
+    font-weight: 600;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #3f72af;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+    background: #365f95;
+}
+
+/* Separate Logout button */
+.logout-btn {
+    background: #d9534f;
+    margin-left: 18px;
+}
+
+.logout-btn:hover {
+    background: #c9302c;
+}
+
+/* ===== MOBILE VIEW ===== */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .nav-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logout-btn {
+        margin-left: 0;
+        background: #d9534f;
+    }
+}
+

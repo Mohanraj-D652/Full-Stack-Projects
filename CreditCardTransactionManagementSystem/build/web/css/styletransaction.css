@@ -1,0 +1,161 @@
+/* ===== Add Transaction Page Background ===== */
+form {
+    width: 360px;          /* reduced size */
+    padding: 28px 24px;   /* compact padding */
+}
+
+
+
+body {
+    background: linear-gradient(135deg, #f4f7fc, #edf3fb);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* ===== Page Heading ===== */
+h2 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 25px;
+    color: #24536b;
+}
+
+/* ===== Add Transaction Form Box ===== */
+form {
+    width: 420px;
+    margin: auto;
+    padding: 35px 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ===== Inputs & Select ===== */
+form input,
+form select {
+    padding: 11px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccd6e0;
+    font-size: 15px;
+}
+
+/* ===== Save Button ===== */
+form input[type="submit"] {
+    background: #3f72af;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #365f95;
+}
+
+/* ===== Top Right Navigation Buttons ===== */
+.nav-cards,
+.nav-dashboard {
+    position: fixed;
+    top: 18px;
+    right: 30px;
+    text-decoration: none;
+    background: #3f72af;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.nav-cards { right: 150px; }
+
+.nav-cards:hover,
+.nav-dashboard:hover {
+    background: #365f95;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    .nav-cards,
+    .nav-dashboard {
+        position: static;
+        display: inline-block;
+        margin: 12px auto;
+        text-align: center;
+    }
+}
+
+form select {
+    background-color: #f9fbff;
+    color: #24536b;
+    cursor: pointer;
+}
+
+/* Remove default ugly arrow and create custom one */
+form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #3f72af 50%),
+        linear-gradient(135deg, #3f72af 50%, transparent 50%);
+    background-position:
+        calc(100% - 18px) calc(50% - 3px),
+        calc(100% - 12px) calc(50% - 3px);
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+}
+
+/* Dropdown options */
+form select option {
+    background: #ffffff;
+    color: #24536b;
+    padding: 10px;
+}
+
+/* On focus */
+form select:focus {
+    outline: none;
+    border-color: #3f72af;
+    box-shadow: 0 0 0 2px rgba(63,114,175,0.15);
+}
+form input,
+form select {
+    padding: 9px 10px;   /* slightly smaller */
+    font-size: 14px;
+}
+/* ===== Compact Form Size ===== */
+form {
+    width: 360px;
+    padding: 26px 22px;
+    gap: 10px;                 /* reduce vertical space between fields */
+}
+
+/* Reduce input & select height */
+form input,
+form select {
+    padding: 9px 10px;        /* smaller height */
+    font-size: 14px;
+}
+
+/* Reduce heading margin */
+h2 {
+    margin-top: 80px;
+    margin-bottom: 18px;
+}
+
+/* Reduce submit button height */
+form input[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+}

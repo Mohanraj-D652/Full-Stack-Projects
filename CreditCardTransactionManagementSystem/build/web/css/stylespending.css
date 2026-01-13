@@ -1,0 +1,53 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 Dec 2025, 11:52:34 pm
+    Author     : arjun
+*/
+
+body{
+    margin:0;
+    font-family:'Segoe UI',Tahoma;
+    background:linear-gradient(135deg,#f4f7fc,#edf3fb);
+}
+
+h2{text-align:center;margin-top:90px;color:#24536b;}
+.note{text-align:center;color:#b00020;font-size:13px;margin-bottom:15px;}
+
+.table-wrapper{
+    width:95%;
+    max-width:1000px;
+    margin:20px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:14px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    overflow-x:auto;
+}
+
+table{width:100%;border-collapse:collapse;}
+thead{background:#e6f1f7;}
+th,td{padding:12px;border-bottom:1px solid #f0f0f0;font-size:14px;}
+th{color:#24536b;text-align:left;}
+.amount,.amount-col{text-align:right;font-weight:600;color:#3f72af;}
+.high-text{color:#b00020;font-weight:bold;}
+
+.page-actions{
+    text-align:center;
+    margin:30px 0;
+}
+.page-actions a{
+    text-decoration:none;
+    background:#3f72af;
+    color:white;
+    padding:8px 16px;
+    border-radius:6px;
+    margin:6px;
+}
+
+@media(max-width:768px){
+    h2{margin-top:40px;}
+    th,td{font-size:13px;padding:10px;}
+}
